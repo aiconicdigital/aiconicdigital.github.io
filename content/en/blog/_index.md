@@ -1,4 +1,4 @@
 ---
-author: AIconic
+author: AIconic Studio
 title: Blog
 ---

@@ -41,10 +41,6 @@ DefaultContentLanguageInSubdir = true
     name = "Tags"
     url = "tags"
     weight = 3
-[[languages.en.menus.main]]
-    name = "Top Post"
-    url = "/en/blog/emoji-support/"
-    weight = 4
  
   # zh
   [languages.zh]
@@ -78,10 +74,6 @@ DefaultContentLanguageInSubdir = true
     name = "标签"
     url = "tags"
     weight = 3
-[[languages.zh.menus.main]]
-    name = "热门文章"
-    url = "/zh/blog/emoji-support/"
-    weight = 4
 
 
 [params]

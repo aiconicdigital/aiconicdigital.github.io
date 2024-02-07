@@ -1,10 +1,12 @@
 ---
-author: "AIconic"
+author: "AIconic Studio"
 title: "Cartoonize Yourself with AI"
-date: 2024-07-02
-description: "Use AI tools to cartoonize your portait"
-tags: ["AI", "ComfyUI", "Cartoonize", "ComfyUI Workflow"]
-thumbnail: images/2020-02-07-cartoonize-yourself-with-ai_tylor_swify.png
+date: 2024-02-07
+description: "Use AI tools to turn a real world portait photo into a cartoonized cute yourself."
+tags: ["Ai", "ComfyUI", "Cartoonize", "ComfyUI workflow"]
+thumbnail: /images/2020-02-07-cartoonize-yourself-with-ai_tylor_swify_en.png
 ---
 
-tbd
+Content under writing...
+
+<!--more-->
