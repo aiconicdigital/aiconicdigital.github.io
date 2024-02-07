@@ -1,4 +1,231 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://aiconicdigital.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'AIconic Studio'
 theme = 'blist'
+
+DefaultContentLanguage = 'zh'
+DefaultContentLanguageInSubdir = true
+
+
+
+[languages]
+  # en
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'AIconic Studio'
+    weight = 0
+    [languages.en.params]
+      introTitle = '<span style="color: #4A93CE; font-style: bold;">A</span><span style="color: #74BC4C; font-style: bold;">I</span>conic Studio'
+      introSubtitle = 'AI and IT Digital Studio based in Sydney Australia' 
+      introPhoto = '/home-header.webp'
+      logo = '/logo.png'
+      copyright = "Copyright © 2024 - AIconic Studio · All rights reserved"
+      [languages.en.params.homepage.social]
+        title = "Follow us"
+        description = "We work on non-profit and commercial projects. Follow us on social media to get latest updates."
+
+    [languages.en.menus]
+[[languages.en.menus.main]]
+    name = "Blog"
+    url = "blog"
+    weight = 1
+[[languages.en.menus.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 2
+[[languages.en.menus.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3
+[[languages.en.menus.main]]
+    name = "Top Post"
+    url = "/en/blog/emoji-support/"
+    weight = 4
+ 
+  # zh
+  [languages.zh]
+    contentDir = 'content/zh'
+    disabled = false
+    languageCode = 'zh-CN'
+    languageDirection = 'ltr'
+    languageName = '中文'
+    title = '澳洲创智工作室'
+    weight = 0
+    [languages.zh.params]
+      introTitle = '澳洲<span style="color: #4A93CE; font-style: bold;">创</span><span style="color: #74BC4C; font-style: bold;">智</span>工作室'
+      introSubtitle = '专注AI,数字,IT技术' 
+      introPhoto = '/home-header.webp'
+      logo = '/logo.png'
+      copyright = "版权所有 © 2024 - 澳洲创智工作室 · 保留所有权利"
+      [languages.zh.params.homepage.social]
+        title = "关注我们"
+        description = "我们从事各种商业和非盈利项目。 欢迎在社交媒体关注我们，获得一手咨询"
+
+    [languages.zh.menus]
+[[languages.zh.menus.main]]
+    name = "博客"
+    url = "blog"
+    weight = 1
+[[languages.zh.menus.main]]
+    name = "关于我们"
+    url = "page/about/"
+    weight = 2
+[[languages.zh.menus.main]]
+    name = "标签"
+    url = "tags"
+    weight = 3
+[[languages.zh.menus.main]]
+    name = "热门文章"
+    url = "/zh/blog/emoji-support/"
+    weight = 4
+
+
+[params]
+  # Enable the darkmode toggle in header
+  darkModeToggle = true
+  
+  # Enable search in header
+  enableSearch = true
+
+  # Option to customize the search parameters of a page
+  # Below are the supported options; Note that including entire content
+  # may slowdown the loading of search results
+  # Title of page is included by default
+  searchKeys = [
+    "tags",
+    #"date",
+    "categories",
+    #"summary",
+    "content",
+    #"link"
+    #"author"
+  ]
+
+  # Custom copyright - optional
+  favicon = "/favicon.png"
+
+  # Color for the intro details and social links block, not applicable for dark mode
+  # Supported values: Any color from TailwindCSS default colors
+  # Reference: https://tailwindcss.com/docs/customizing-colors
+  ascentColor = "bg-gray-100"
+
+  # The page bundle that is shown on the front page
+  frontBundle = "blog"
+
+  # Used to hide the post metadata such as posted date, reading time and word count
+  # Can be used at site level or page level
+  hideMeta = false
+
+  # To hide "Other languages" option if the post is available in multiple languages
+  # Can be used at site level or page level
+  hideOtherLanguages = false
+
+  # Add support for Table of contents
+  # Can be added to a page level also in markdown frontmatter
+  toc = true
+
+  # Hides the thumbnail in post view
+  # Thumbnails in home and blog pages will still be shown
+  # This setting can also be in page's markdown file
+  hidePageThumbnail = false
+
+# Comments system
+[params.comments]
+  # Supports disqus, giscus and utterances
+  # Check hugo docs for setting up disqus
+  system = "giscus"
+
+  # Options for giscus, exclude hyphens
+  repo = ""
+  repoid = ""
+  category = ""
+  categoryid = ""
+  mapping = ""
+  strict = ""
+  reactionsenabled = ""
+  emitmetadata = ""
+  inputposition = ""
+  theme = ""
+
+  # Options for utterances, exclude hyphens
+  # repo = ""
+  # issueterm = ""
+  # theme = ""
+
+
+#  [[params.homepage.social.icons]]
+#    website = "twitter"
+#    url = "https://twitter.com/"
+#  [[params.homepage.social.icons]]
+#    website = "linkedin"
+#    url = "https://linkedin.com/in/"
+#  [[params.homepage.social.icons]]
+#    website = "xing"
+#    url = "https://www.xing.com/profile/"
+#  [[params.homepage.social.icons]]
+#    website = "telegram"
+#    url = "https://t.me/"
+#  [[params.homepage.social.icons]]
+#    website = "github"
+#    url = "https://github.com/"
+#  [[params.homepage.social.icons]]
+#    website = "buymeacoffee"
+#    url = "https://www.buymeacoffee.com/"
+#  [[params.homepage.social.icons]]
+#    website = "medium"
+#    url = "https://medium.com/"
+#  [[params.homepage.social.icons]]
+#    website = "reddit"
+#    url = "https://reddit.com/"
+#  [[params.homepage.social.icons]]
+#    website = "dribbble"
+#    url = "https://dribbble.com/"
+#  [[params.homepage.social.icons]]
+#    website = "stackoverflow"
+#    url = "https://stackoverflow.com/"
+#  [[params.homepage.social.icons]]
+#    website = "xda"
+#    url = "https://forum.xda-developers.com/"
+#  [[params.homepage.social.icons]]
+#    website = "tiktok"
+#    url = "https://tiktok.com"
+#  [[params.homepage.social.icons]]
+#    website = "googlescholar"
+#    url = "https://scholar.google.com/"
+#  [[params.homepage.social.icons]]
+#    website = "mastodon"
+#    url = "https://joinmastodon.org"
+  [[params.homepage.social.icons]]
+    website = "youtube"
+    url = "https://studio.youtube.com/channel/UCFDuw5eCtXrKs2R7UFi_oNA"
+  [[params.homepage.social.icons]]
+    website = "instagram"
+    url = "https://instagram.com"
+#  [[params.homepage.social.icons]]
+#    website = "facebook"
+#    url = "https://facebook.com"
+#  [[params.homepage.social.icons]]
+#    website = "behance"
+#    url = "https://behance.net"
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
