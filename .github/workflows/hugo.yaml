@@ -45,6 +45,9 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Apply Jeff's customizations
+        run: |
+          cd themes/blist && git apply ../blist-customize.diff
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
